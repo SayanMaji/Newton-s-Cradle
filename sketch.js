@@ -27,7 +27,7 @@ function setup() {
 
     rigid = new Support(600,100,800,50);
 
-	rope1 = new Hangingrope(bob1,rigid,bob1.radius*4,0);
+	string1 = new Hangingrope(rigid.body,bob1.body);
 	Engine.run(engine);
   
 }
@@ -45,6 +45,8 @@ function draw() {
   bob6.display();
 
   rigid.display();
+
+  string1.display();
   drawSprites();
  
 }

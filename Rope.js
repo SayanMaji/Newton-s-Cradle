@@ -12,10 +12,16 @@ class Hangingrope{
     }
 
     display(){
-        var pointA = this.Slingshot.bodyA.position;
-        var pointB = this.Slingshot.bodyB.position;
+        var pointA = this.Hangingrope.bodyA.position;
+        var pointB = this.Hangingrope.bodyB.position;
+        
+        var Anchor1X= pointA.x;
+        var Anchor1Y= pointA.y;
+        
+        var Anchor2X=pointB.x+this.offsetX;
+        var Anchor2Y=pointB.y+this.offsetY;
         strokeWeight(4);
-        line(pointA.x, pointA.y, pointB.x, pointB.y);
+        line(Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
     }
     
 }
