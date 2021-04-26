@@ -15,11 +15,11 @@ class Hangingrope{
         var pointA = this.Hangingrope.bodyA.position;
         var pointB = this.Hangingrope.bodyB.position;
         
-        var Anchor1X= pointA.x;
-        var Anchor1Y= pointA.y;
+        var Anchor1X= pointA.x+this.offsetX;
+        var Anchor1Y= pointA.y+this.offsetY;
         
-        var Anchor2X=pointB.x+this.offsetX;
-        var Anchor2Y=pointB.y+this.offsetY;
+        var Anchor2X=pointB.x;
+        var Anchor2Y=pointB.y;
         strokeWeight(4);
         line(Anchor1X,Anchor1Y,Anchor2X,Anchor2Y);
     }
